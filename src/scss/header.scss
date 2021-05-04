@@ -1,0 +1,31 @@
+.header-menu {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	list-style: none;
+	padding: 10px -10px;
+	margin: 0;
+}
+
+.header-item {
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+	font-family: $open-sans;
+	font-weight: 400;
+	font-style: normal;
+	margin-right: 10px;
+}
+
+// .header-foto {
+//   width: 500px;
+//   height: 500px;
+//   background: url("../img/.....") center center no-repeat;
+//   background-color: rgb(235, 235, 145);
+//   background-size: contain;
+//   margin: 0;
+//   @media (min-width: 767px) {
+//     width: 1100px;
+//     height: 1100px;
+//   }
+// }
