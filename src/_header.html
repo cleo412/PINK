@@ -1,11 +1,15 @@
-<header class="header">
+<div class="header header__opened">
 	<div class="center">
-		<ul class="header-menu">
-			<li class="header-item">Главная</li>
-			<li class="header-item">Фотографии</li>
-			<li class="header-item">Конкурс</li>
-			<li class="header-item">html academy</li>
-		</ul>
-		<!-- <img src="img/....."> -->
+		<a class="header-link">
+			<div class="header-logo">
+				<img src="img/pink-logo.svg" width="74" height="23" alt="Логотип сайта Пинк">
+			</div>
+			<button class="header-toggle" tabindex="1" type="button"><span class="visually-hidden">Закрыть
+					меню</span></button>
+		</a>
+		<nav class="header-nav">
+		  @@include("_nav.html")
+		</nav>
+
 	</div>
-</header>
+</div>

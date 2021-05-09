@@ -13,14 +13,16 @@ let path = {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
 		css: source_folder + "/scss/style.scss",
 		js: source_folder + "/js/script.js",
-		img: source_folder + "/img/**/*.{jpg, jpeg, svg, png, gif, ico, webp}",
+		// img: source_folder + "/img/**/*.{jpg, jpeg, svg, png, gif, ico, webp}",
+		img: source_folder + "/img/**/*",
 		fonts: source_folder + "/fonts/*.{woff2, woff}",
 	},
 	watch: {
 		html: source_folder + "/**/*.html",
 		css: source_folder + "/**/*.scss",
 		js: source_folder + "/**/*.js",
-		img: source_folder + "/img/**/*.{jpg, jpeg, svg, png, gif, ico, webp}",
+		// img: source_folder + "/img/**/*.{jpg, jpeg, svg, png, gif, ico, webp}",
+		img: source_folder + "/img/**/*",
 	},
 	clean: "./" + project_folder + "/"
 }
@@ -167,7 +169,7 @@ gulp.task("svgSprite", function () {
 				stack: {
 					sprite: "../icons/icons.svg",
 					// todo: glitch/
-					// exemple: true 
+					exemple: true
 				}
 			},
 		}
