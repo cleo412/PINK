@@ -1,0 +1,26 @@
+.nav {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-item {
+	font-family: $open-sans;
+	font-size: 18px;
+	line-height: 32px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-style: normal;
+	color: $white;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 0px $black, inset 0px 1px 0px $grey-15;
+	padding: 16px;
+
+	&--current {
+		border-bottom: 2px solid $white;
+	}
+}
+

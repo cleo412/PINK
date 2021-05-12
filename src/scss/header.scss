@@ -1,28 +1,23 @@
 .header {
-	width: 100%;
 	background: $grey-main;
-}
-
-.header-center {
-	width: 100%;
 }
 
 .header-link {
 	display: flex;
 	justify-content: space-between;
 	box-shadow: 0px 1px 0px $black;
-	// box-sizing: border-box;
-	padding: 25px 20px;
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 .header-logo {
 	width: 74px;
 	height: 23px;
-	padding: 0;
-	margin: 0;
-	&:hover {
+
+	&:hover path {
 		fill: $pink;
 	}
+
 	&:active {
 		opacity: 0.3;
 	}
@@ -38,6 +33,7 @@
 	border: none;
 	padding: 0;
 	margin: 0;
+
 	&::before {
 		position: absolute;
 		top: 11px;
@@ -48,6 +44,7 @@
 		background-color: $white;
 		transform: rotate(-45deg);
 	}
+
 	&::after {
 		position: absolute;
 		top: 11px;
@@ -60,48 +57,9 @@
 	}
 }
 
-.nav {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	text-align: center;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.nav-item {
-	font-family: $open-sans;
-	font-size: 18px;
-	line-height: 32px;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-style: normal;
-	color: $white;
-	// box-sizing: border-box;
-	box-shadow: 0px 1px 0px $black, inset 0px 1px 0px $grey-15;
-	padding: 15px;
-}
-
-// .header-foto {
-//   width: 500px;
-//   height: 500px;
-//   background: url("../img/.....") center center no-repeat;
-//   background-color: rgb(235, 235, 145);
-//   background-size: contain;
-//   margin: 0;
-//   @media (min-width: 767px) {
-//     width: 1100px;
-//     height: 1100px;
-//   }
+// // todo 768
+// @media (min-width: 768px) {
+// 	.header-nav {
+// 		padding: 20px -20px;
+// 	}
 // }
-
-// todo 768
-@media (min-width: 768px) {
-	.header-nav {
-		padding: 20px -20px;
-		&--current {
-			border-bottom: 2px solid $black;
-		}
-	}
-}
