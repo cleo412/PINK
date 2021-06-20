@@ -1,0 +1,115 @@
+.slider {
+	position: relative;
+	width: inherit;
+	height: 340px;
+	margin: 0 auto 20px;
+}
+
+.slider__slides {
+	position: relative;
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+	background-color: $grey-15;	
+}
+
+.slider__radio {
+	display: none;
+}
+
+.slider__slides-reviews {
+	position: absolute;
+	// width: inherit;
+	// height: inherit;
+	opacity: 0;
+	z-index: 0;
+	transform: scale(1.5);
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+
+	font-family: $open-sans;
+	color: $grey-main;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	padding: 40px 20px 30px;
+}
+
+.slider__slides-title {
+	font-size: 18px;
+	margin: 0 0 15px;
+}
+
+.slider__slides-text {
+	font-weight: 400;
+	font-size: 14px;	
+}
+
+.slider__controls {
+	position: absolute;
+	left: calc((100% - 25%) / 2);
+	top: 300px;
+	display: flex;
+	justify-content: space-around;
+	width: 25%;
+	height: 10px;
+}
+
+.slider__control {
+	position: relative;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: $grey-main;
+	opacity: 0.3;
+	// transition: background ease-in-out 0.5s;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		background: $white;
+		border: 3px solid $grey-main;
+	}
+}
+
+#bullet-1:checked ~ .slider__slides > .slide1,
+#bullet-2:checked ~ .slider__slides > .slide2,
+#bullet-3:checked ~ .slider__slides > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
+
+//  #slide1:checked ~ .slider > .slide1
+
+// ul >li	комбинатор дочерних селекторов,  выберет только дочерние элементы li, которые находятся внутри, на первом уровне вложенности по отношению к ul
+
+// p ~ span	комбинатор всех соседних элементов, выберет все элементы span, которые находятся после элемента р внутри одного родителя
+
+// <div class="wrapper">
+// 	<input type="radio" name="point" id="slide1" checked>
+// 	<input type="radio" name="point" id="slide2">
+// 	<input type="radio" name="point" id="slide3">
+// 	<input type="radio" name="point" id="slide4">
+// 	<input type="radio" name="point" id="slide5">
+
+// 	<div class="slider">
+
+// 		<div class="slides slide1"></div>
+// 		<div class="slides slide2"></div>
+// 		<div class="slides slide3"></div>
+// 		<div class="slides slide4"></div>
+// 		<div class="slides slide5"></div>
+// 	</div>
+
+// 	<div class="controls">
+// 		<label for="slide1"></label>
+// 		<label for="slide2"></label>
+// 		<label for="slide3"></label>
+// 		<label for="slide4"></label>
+// 		<label for="slide5"></label>
+// 	</div>
+// </div>
